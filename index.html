@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>flyingbird</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../assets/images/dtec_favicon.PNG">
-  
-  <!-- stylesheets *******************************************-->
-  <link rel="stylesheet" href="style.css">
- 
-  <!-- P5.js & P5.play ***************************************-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js" integrity="sha512-bzpp8klYroR6PFgL3RJ+VkvY5hJna7Zd38OA56peUDHSNQpSiN9lDQVnMYtcw7hoAVhbR6mAOdH+ymzg1o+G0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.js" integrity="sha512-TU9AWtV5uUZPX8dbBAH8NQF1tSdigPRRT82vllAQ1Ke28puiqLA6ZVKxtUGlgrH6yWFnkKy+sE6luNEGH9ar0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://p5play.org/v3/planck.min.js"></script>
-  <script src="https://p5play.org/v3/p5play.js"></script>
-  
-  <!-- JQUERY ************************************************-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flying Bird Game</title>
+
+<link rel="style" href="style.css">
+<script src="script.js" defer></script>
+
 </head>
 
-<!--*************************************************************
-  BODY
-**************************************************************-->
 <body>
-  <script src="flyingbird.js"></script>
+
+<div class="background"></div>
+<div class="container">
+        <div class="column">
+            <button onclick="location.href='html/click start.html'"> click start</button>
+<h1 class="title">Flying Bird</h1>
+<img src="background.jpg" class="background" id="background ">
+<div class="message">
+Press SPACE to Start Game
+<p>Press SPACE to make the bird fly</p>
+</div>
+
+<div class="score">
+<span class="score_title">Score:</span>
+<span class="score_val">0</span>
+</div>
+
 </body>
+
 </html>
-<!--*************************************************************
-  END OF FLYINGBIRD.JS
-**************************************************************-->

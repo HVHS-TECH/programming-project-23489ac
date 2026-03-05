@@ -8,11 +8,13 @@
 function setup() {
 	console.log("setup: ");
 	//commands for setup//
-	cnv = new Canvas(750,  800);
+	cnv = new Canvas(900,  900);
  
-	 circle = new Sprite(400, 200, 150);
-	 circle.color = 'orange';
-
+	 rectangle = new Sprite(400, 200, 150);
+	 rectangle.color = 'orange';
+	 text("Hello World", 50, 50) 
+	var name = "Mr Bob";
+	text("Hello "+name, 50, 100);
 
 }
 	
@@ -20,6 +22,10 @@ function setup() {
 // draw()
 /*******************************************************/
 function draw() {
+	text("Hello World", 50, 50) 
+	var name = "Mr Bob";
+	text("Hello "+name, 50, 100);
+
 	background('skyblue');
 }
 
