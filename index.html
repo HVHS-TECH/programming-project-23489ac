@@ -4,32 +4,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Flying Bird Game</title>
 
-<link rel="style" href="style.css">
-<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div class="background"></div>
-<div class="container">
-        <div class="column">
-            <button onclick="location.href='html/click start.html'"> click start</button>
 <h1 class="title">Flying Bird</h1>
-<img src="background.jpg" class="background" id="background ">
-<div class="message">
-Press SPACE to Start Game
-<p>Press SPACE to make the bird fly</p>
+
+<div id="game">
+
+<div id="bird"></div>
+
+<div id="score">Score: 0</div>
+
+<div id="message">
+Press SPACE to Start
 </div>
 
-<div class="score">
-<span class="score_title">Score:</span>
-<span class="score_val">0</span>
 </div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
