@@ -1,0 +1,16 @@
+body{
+margin:0;
+text-align:center;
+font-family:Arial;
+background:#70c5ce;
+}
+#game{
+width:400px;
+height:500px;
+background:#87CEEB;
+margin:auto;
+position:relative;
+overflow:hidden;
+border:3px solid black;
+}
+

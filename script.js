@@ -8,26 +8,13 @@
 function setup() {
 	console.log("setup: ");
 	//commands for setup//
-	cnv = new Canvas(900,  900);
- 
-	 rectangle = new Sprite(400, 200, 150);
-	 rectangle.color = 'orange';
-	 text("Hello World", 50, 50) 
-	var name = "Mr Bob";
-	text("Hello "+name, 50, 100);
-
+	
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
-function draw() {
-	text("Hello World", 50, 50) 
-	var name = "Mr Bob";
-	text("Hello "+name, 50, 100);
 
-	background('skyblue');
-}
 
 /*******************************************************/
 //  END OF APP
