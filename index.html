@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flying Bird Game</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
+    <!-- Background -->
+    <div class="background"></div>
 
-<h1 class="title">Flappy Bird</h1>
+    <!-- Bird -->
+    <img src="Bird (1).png" class="bird" id="bird">
 
-<div id="game">
+    <!-- UI -->
+    <div class="ui">
+        <div id="start-screen">
+            <h1>Flappy Bird</h1>
+            <button id="start-btn">Start Game</button>
+        </div>
 
-<div id="bird"></div>
+        <div id="score-board">
+            Score: <span id="score">0</span>
+        </div>
 
-<div id="score">Score: 0</div>
-
-<div id="message">
-Press SPACE to Start
-</div>
-
-</div>
-
-<script src="script.js"></script>
-
+        <div id="game-over">
+            <h2>Game Over!</h2>
+            <button id="restart-btn">Try Again</button>
+        </div>
+    </div>
 </body>
 </html>
-
