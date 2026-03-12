@@ -1,4 +1,5 @@
-* {
+* body {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +12,7 @@
     height: 100vh;
     background: url('background-img.png') no-repeat center center;
     background-size: cover;
-    position: absolute;
+    position: fixed;
     z-index: 0;
 }
 
@@ -27,7 +28,7 @@
 
 /* Pipes */
 .pipe {
-    width: 50px;
+    width: 70px;
     position: absolute;
     z-index: 1;
 }
@@ -57,11 +58,12 @@
 /* Scoreboard */
 #score-board {
     position: fixed;
-    top: 10px;
-    left: 10px;
-    font-size: 28px;
-    color: rgb(36, 17, 17);
-    -webkit-text-stroke: 1px black;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: white;
+    -webkit-text-stroke: 2px black;
 }
 
 /* Buttons */
