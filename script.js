@@ -114,30 +114,38 @@ function gameLoop() {
 function spawnPipe() {
     if (!gameStarted) return;
 
-    const topHeight = Math.floor(Math.random() * (window.innerHeight - pipeGap - 100) + 50);
-    const bottomHeight = window.innerHeight - topHeight - pipeGap;
+    // Fixed pipe heights so they don't change wildly
+    const heights = [150, 200, 250, 300];
+    const topHeight = heights[Math.floor(Math.random() * heights.length)];
 
     // Top pipe
     const topPipe = document.createElement('img');
-    topPipe.src = 'toppipe.png'; 
+    topPipe.src = 'toppipe.png';
     topPipe.className = 'pipe';
     topPipe.style.height = topHeight + 'px';
+    topPipe.style.width = pipeWidth + 'px';
     topPipe.style.top = '0px';
     topPipe.style.left = window.innerWidth + 'px';
     document.body.appendChild(topPipe);
 
-    // Bottom pipe                 
+    // Bottom pipe
     const bottomPipe = document.createElement('img');
-    bottomPipe.src = 'bottompipe.png'; 
+    bottomPipe.src = 'bottompipe.png';
     bottomPipe.className = 'pipe';
-    bottomPipe.style.height = bottomHeight + 'px';
+    bottomPipe.style.width = pipeWidth + 'px';
     bottomPipe.style.top = topHeight + pipeGap + 'px';
     bottomPipe.style.left = window.innerWidth + 'px';
     document.body.appendChild(bottomPipe);
- pipes.push({ top: topPipe, bottom: bottomPipe, x: window.innerWidth, topHeight, scored: false });
 
-    // Spawn next pipe after 2 seconds
-    setTimeout(spawnPipe, 2000);
+    pipes.push({
+        top: topPipe,
+        bottom: bottomPipe,
+        x: window.innerWidth,
+        topHeight: topHeight,
+        scored: false
+    });
+
+    setTimeout(spawnPipe, 2200);
 }
 
 // End game
