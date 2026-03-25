@@ -10,29 +10,44 @@
 function setup() {
 	cnv = new Canvas(850, 850);
 	world.gravity.y = 10;
-	bird= new Sprite(width/8, height/4, 80, 'd');
+	bird= new Sprite(100,400, 80, 'd');
     bird.color = 'blue';
-    bird.rotationSpeed = 2;
     bird.vel.x = 2;
  
-    for (i = 0; i <4; i++) 
-    pipe1 = new Sprite(600,150,70,300,'k');
-    pipe1.color = 'green'
-    pipe1.vel.x = 1;
-    pipe1.bounciness = 1;
-    pipe1.friction = 0;
-    pipe2 =new Sprite(50,700,70,300,'k');
-    pipe2.color = 'green'
-    pipe2.vel.x = 1;
-    pipe3 =new Sprite(700,700,70,300,'k');
-    pipe3.color = 'green'
-    pipe3.vel.x = 1;
-    pipe4 =new Sprite(700,200,70,400,'k');
-    pipe4.color = 'green' 
-    pipe4.vel.x = 1;
-    pipe5 =new Sprite(500,700,70,300,'k');
-    pipe5.color = 'green'
-    pipe5.vel.x = 1;
+    pipe1Top = new Sprite(200, 100, 80, 300, 'k'); 
+    pipe1Top.color = 'green'; 
+    pipe1Top.vel.x = 4;
+    pipe1Bottom = new Sprite(200, 750, 80, 250, 'k'); 
+    pipe1Bottom.color = 'green'; 
+    pipe1Bottom.vel.x = 4;
+
+    pipe2Top = new Sprite(350, 120, 80, 280, 'k'); 
+    pipe2Top.color = 'green'; 
+    pipe2Top.vel.x = 1;
+    pipe2Bottom = new Sprite(350, 750, 80, 300, 'k'); 
+    pipe2Bottom.color = 'green'; 
+    pipe2Bottom.vel.x = 1;
+
+     pipe3Top = new Sprite(500, 90, 80, 380, 'k'); 
+    pipe3Top.color = 'green'; 
+    pipe3Top.vel.x = 1;
+    pipe3Bottom = new Sprite(500, 770, 80, 250, 'k'); 
+    pipe3Bottom.color = 'green'; 
+    pipe3Bottom.vel.x = 1;
+
+    pipe4Top = new Sprite(650, 150, 80, 300, 'k'); 
+    pipe4Top.color = 'green'; 
+    pipe4Top.vel.x = 1;
+    pipe4Bottom = new Sprite(650, 700, 80, 280, 'k'); 
+    pipe4Bottom.color = 'green'; 
+    pipe4Bottom.vel.x = 1;
+
+    pipe5Top = new Sprite(800, 100, 80, 320, 'k'); 
+    pipe5Top.color = 'green'; 
+    pipe5Top.vel.x = 1;
+    pipe5Bottom = new Sprite(800, 750, 80, 250, 'k'); 
+    pipe5Bottom.color = 'green'; 
+    pipe5Bottom.vel.x = 1;
 
 
     }
@@ -46,11 +61,12 @@ console.log("setup: ");
 function draw() {
 	background('lightblue');
 if (kb.presses('space')){
-    bird.vel.y= -5
+    bird.vel.y= -7
+
+}
 }
 
-	
-}
+
 
 /*******************************************************/
 //  END OF APP
